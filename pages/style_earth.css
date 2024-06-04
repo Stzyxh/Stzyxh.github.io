@@ -3,12 +3,14 @@ html, body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    color: #fff;
-    background-color: #121212;
+    color: #f3f3f3;
+    background-color: #282c34;
+    background-image: url('background-texture.png'); /* Optional: a subtle background texture */
+    background-size: cover;
     width: 100vw;
     justify-content: space-between;
     overflow-x: hidden;
@@ -16,7 +18,7 @@ body {
 }
 
 body:hover {
-    background-color: #1e1e1e;
+    background-color: #333841;
 }
 
 .main-heading {
@@ -34,7 +36,10 @@ body:hover {
 }
 
 .content-section {
-    background: none;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 40px;
+    margin: 20px;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -48,16 +53,38 @@ body:hover {
 }
 
 .content-text {
-    text-align: center;
-    font-size: 20px;
+    text-align: justify;
+    font-size: 18px;
     max-width: 800px;
     margin: 20px;
     opacity: 0;
     animation: fadeInContent 4s forwards;
     animation-delay: 4s;
+    line-height: 1.8;
+    color: #ddd;
+}
+
+.content-text p {
+    margin-bottom: 20px;
+    text-indent: 50px; /* Adds an indent to the first line of each paragraph */
+}
+
+.author-note {
+    text-align: right;
+    font-size: 16px;
+    margin-top: 30px;
+    color: #aaa;
+    opacity: 0;
+    animation: fadeInAuthorNote 4s forwards;
+    animation-delay: 5s;
 }
 
 @keyframes fadeInContent {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInAuthorNote {
     from { opacity: 0; }
     to { opacity: 1; }
 }

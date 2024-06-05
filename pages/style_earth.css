@@ -66,7 +66,6 @@ body:hover {
 
 .content-text p {
     margin-bottom: 20px;
-    text-indent: 50px; /* Adds an indent to the first line of each paragraph */
 }
 
 .author-note {
@@ -95,7 +94,36 @@ body:hover {
     left: 0;
     width: 100%;
     height: 100%;
+    background: rgba(0, 0, 0, 0.5);
     z-index: -1;
+}
+
+.home-link {
+    text-align: center;
+    margin: 20px;
+    opacity: 0;
+    animation: fadeInHomeLink 4s forwards;
+    animation-delay: 6s;
+}
+
+.home-link a {
+    text-decoration: none;
+    color: #61dafb;
+    font-size: 20px;
+    border: 2px solid #61dafb;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.home-link a:hover {
+    background-color: #61dafb;
+    color: #282c34;
+}
+
+@keyframes fadeInHomeLink {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 footer {
@@ -104,7 +132,7 @@ footer {
     color: #888;
     opacity: 0;
     animation: fadeInFooter 4s forwards;
-    animation-delay: 6s;
+    animation-delay: 7s;
 }
 
 @keyframes fadeInFooter {

@@ -35,5 +35,41 @@
     <footer>
         &copy; 2024 Stzyxh 
     </footer>
+    
+    <div id="popupModal" class="popup-modal">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h2>The earth is our home - Let's stand up together for a better future!</h2>
+            <p>Be part of the change! Look at this <a href="pages/responsibility.html" class="animated-link">Page</a></p>
+        </div>
+    </div>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(function() {
+            document.getElementById('popupModal').style.display = 'block';
+        }, 5000); 
+    
+        var closeBtn = document.getElementsByClassName('close-btn')[0];
+    
+        closeBtn.onclick = function() {
+            document.getElementById('popupModal').classList.add('close-animation');
+            setTimeout(function() {
+                document.getElementById('popupModal').style.display = 'none';
+                document.getElementById('popupModal').classList.remove('close-animation');
+            }, 1000);
+        }
+    
+        window.onclick = function(event) {
+            if (event.target == document.getElementById('popupModal')) {
+                document.getElementById('popupModal').classList.add('close-animation');
+                setTimeout(function() {
+                    document.getElementById('popupModal').style.display = 'none';
+                    document.getElementById('popupModal').classList.remove('close-animation');
+                }, 1000); 
+            }
+        }
+    });
+    </script>
 </body>
 </html>

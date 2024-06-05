@@ -9,7 +9,7 @@ html, body {
 body {
     color: #f3f3f3;
     background-color: #282c34;
-    background-image: url('background-texture.png'); 
+    background-image: url('background-texture.png'); /* Optional: a subtle background texture */
     background-size: cover;
     width: 100vw;
     justify-content: space-between;

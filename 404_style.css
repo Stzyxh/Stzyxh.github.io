@@ -1,20 +1,56 @@
 body {
-    background-color: black;
+    background: linear-gradient(to bottom, black, blue);
+    background-size: 200% 200%;
     color: white;
     font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+    animation: gradientShift 10s ease infinite;
 }
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
 h1 {
     text-align: center;
     margin-top: 50px;
     font-size: 3rem;
+    opacity: 0;
+    animation: fadeInText 4s forwards;
+    animation-delay: 1s;
 }
+
 p {
     text-align: center;
     margin-top: 20px;
+    opacity: 0;
+    animation: fadeInText 4s forwards;
+    animation-delay: 2s;
 }
+
 footer {
     text-align: center;
     padding: 10px;
     color: #ffffff;
-    margin-top: 650px;
+    margin-top: auto;
+    opacity: 0;
+    animation: fadeInText 4s forwards;
+    animation-delay: 3s;
+}
+
+@keyframes fadeInText {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }

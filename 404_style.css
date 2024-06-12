@@ -1,0 +1,20 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 3rem;
+}
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+    margin-top: 650px;
+}

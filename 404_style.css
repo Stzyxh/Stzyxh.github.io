@@ -40,6 +40,29 @@ p {
     animation-delay: 2s;
 }
 
+.button-container {
+    text-align: center;
+    margin: 20px 0;
+    opacity: 0;
+    animation: fadeInText 4s forwards;
+    animation-delay: 3s;
+}
+
+.home-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.home-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
 footer {
     text-align: center;
     padding: 10px;
@@ -47,7 +70,7 @@ footer {
     margin-top: auto;
     opacity: 0;
     animation: fadeInText 4s forwards;
-    animation-delay: 3s;
+    animation-delay: 4s;
 }
 
 @keyframes fadeInText {

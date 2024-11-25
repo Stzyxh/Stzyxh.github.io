@@ -26,7 +26,29 @@ h1 {
     animation: fadeInText 4s forwards;
     animation-delay: 2s;
 }
+.S {
+    color: #FF0000;
+}
 
+.t {
+    color: #FFA500;
+}
+
+.z {
+    color: #FFFF00;
+}
+
+.y {
+    color: #008000;
+}
+
+.x {
+    color: #0000FF;
+}
+
+.h {
+    color: #800080;
+}
 @keyframes fadeInText {
     from { opacity: 0; }
     to { opacity: 1; }

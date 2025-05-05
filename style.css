@@ -18,11 +18,6 @@ body {
 body:hover {
     background-color: #1e1e1e;
 }
-
-.masto-verifiction {
-    opacity: 0;
-}
-
 h1 {
     text-align: center;
     font-size: 50px;
@@ -90,14 +85,6 @@ h1 {
     opacity: 0;
     animation: fadeInProfile 4s forwards;
     transition: all 1s;
-}
-
-.pixelfed:hover {
-    transform: scale(1.5);
-}
-
-.Youtube:hover {
-    transform: scale(1.5);
 }
 
 .profile-image:hover {
@@ -240,7 +227,7 @@ footer {
 }
 
 .animated-link {
-    color: #00f;
+    color: white;
     font-weight: bold;
     text-decoration: none;
     position: relative;
@@ -254,14 +241,14 @@ footer {
     height: 2px;
     bottom: -2px;
     left: 0;
-    background-color: #00f;
+    background-color: white;
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.5s ease-out;
 }
 
 .animated-link:hover {
-    color: #fff;
+    color: red;
     transform: scale(1.1);
 }
 

@@ -144,7 +144,7 @@ body {
 
 .home-link a {
     text-decoration: none;
-    color: #61dafb;
+    color: #ffffff;
     font-size: 20px;
     border: 2px solid white;
     padding: 10px 20px;
@@ -153,9 +153,9 @@ body {
 }
 
 .home-link a:hover {
-    background-color: red;
-    color: #282c34;
-    border: red;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    border: rgb(0, 0, 0);
 }
 
 @keyframes fadeInHomeLink {

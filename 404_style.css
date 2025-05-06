@@ -11,6 +11,7 @@ body {
     animation: gradientShift 10s ease infinite;
 }
 
+
 @keyframes gradientShift {
     0% {
         background-position: 0% 0%;
@@ -49,8 +50,8 @@ p {
 }
 
 .home-button {
-    background-color: #007BFF;
-    color: white;
+    background-color: #ffffff;
+    color: black;
     padding: 15px 30px;
     text-decoration: none;
     font-size: 1.2rem;
@@ -59,8 +60,8 @@ p {
 }
 
 .home-button:hover {
-    background-color: #0056b3;
-    transform: scale(1.1);
+    background-color: #b4cde8;
+    transform: scale(1.2);
 }
 
 footer {

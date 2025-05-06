@@ -181,7 +181,7 @@ footer {
     width: 80%;
     max-width: 600px;
     animation: slideIn 1s forwards;
-    color: white;
+    color: #baaeae;
     text-align: center;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -227,7 +227,7 @@ footer {
 }
 
 .animated-link {
-    color: white;
+    color: rgb(204, 195, 195);
     font-weight: bold;
     text-decoration: none;
     position: relative;
@@ -248,7 +248,7 @@ footer {
 }
 
 .animated-link:hover {
-    color: red;
+    color: white;
     transform: scale(1.1);
 }
 

@@ -1,5 +1,2 @@
-# this is my website
-**feel free to visit it [stzyxh.github.io](https://stzyxh.github.io/)**
-
-General Design is inspired by judemont.
-404 page design is inspired by the 404 page from the Bootsrap Academy Website. 
+# I am migrating to Codeberg! This is the new website https://stzyxh.codeberg.page/
+## the github website will be up for reffering to the codeberg site.

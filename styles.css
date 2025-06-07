@@ -1,0 +1,67 @@
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+        @keyframes buttonGlow {
+            0% { box-shadow: 0 0 10px #ffffff; }
+            50% { box-shadow: 0 0 20px #ffffff; }
+            100% { box-shadow: 0 0 10px #ffffff; }
+        }
+
+body {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 3rem;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.button {
+    background-color: #ffffff;
+    color: black;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    animation: buttonGlow 2s infinite alternate;
+}
+
+.link {
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.5s;
+}
+
+.link:hover {
+    color: #239ac2;
+    transition: transform 3s ease-out;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+    margin-top: auto;
+}

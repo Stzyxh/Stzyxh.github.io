@@ -47,11 +47,11 @@ p {
 }
 
 .link {
-    color: blue;
+    color: white;
     font-weight: bold;
     text-decoration: none;
     position: relative;
-    transition: color 0.5s;
+    transition: color 4s;
 }
 
 .link:hover {
